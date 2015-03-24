@@ -16,5 +16,10 @@ public class FirstTestClass {
 	public void test1Empty() {
 		assertEquals(list(), PrimeFactor.getPrimeFactors(1));
 	}
+	
+	@Test
+	public void test2() throws Exception {
+		assertEquals(list(2), PrimeFactor.getPrimeFactors(2));
+	}
 
 }

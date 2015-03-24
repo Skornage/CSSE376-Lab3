@@ -6,7 +6,7 @@ import java.util.List;
 import org.junit.Test;
 
 
-public class FirstTestClass {
+public class PrimeFactorizationTests {
 
 	private List<Integer> list(Integer...integers) {
 		return Arrays.asList(integers);

@@ -5,7 +5,7 @@ import java.util.List;
 public class PrimeFactor {
 	
 	public static List<Integer> getPrimeFactors(int value) {
-		return null;
+		return new ArrayList();
 	}
 
 }

@@ -6,11 +6,11 @@ public class PrimeNumberGenerator {
 	
 	public static List<Integer> generate(int num) {
 		ArrayList<Integer> primes = new ArrayList<Integer>();
-		if (num > 1) {
-			primes.add(2);
-		} 
-		if (num > 3) {
-			primes.add(3);
+		int prime = 2;
+		while (prime <= num) {
+			if (prime % 2 != 0)
+				primes.add(prime);
+			prime++;
 		}
 		return primes;
 	}

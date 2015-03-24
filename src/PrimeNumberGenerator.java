@@ -10,11 +10,11 @@ public class PrimeNumberGenerator {
 		if (num > 1) {
 			primes.add(2);
 		} 
-		if (num > 3) {
-			primes.add(3);
+		int prime = 3;
+		while (prime < num) {
+			primes.add(prime);
+			prime += 2;
 		}
-		if (num > 5)
-			primes.add(5);
 		return primes;
 	}
 

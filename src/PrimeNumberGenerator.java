@@ -13,6 +13,8 @@ public class PrimeNumberGenerator {
 		if (num > 3) {
 			primes.add(3);
 		}
+		if (num > 5)
+			primes.add(5);
 		return primes;
 	}
 

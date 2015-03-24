@@ -6,12 +6,12 @@ public class PrimeFactor {
 	
 	public static List<Integer> getPrimeFactors(int value) {
 		List<Integer> primes = new ArrayList();
-		while (value % 2 == 0) {
+		int i;
+		for (i = value; i % 2 == 0; i = i / 2) {
 			primes.add(2);
-			value = value / 2;
 		}
-		if (value > 1) {
-			primes.add(value);
+		if (i > 1) {
+			primes.add(i);
 		}
 		return primes;
 	}

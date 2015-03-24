@@ -41,5 +41,10 @@ public class FirstTestClass {
 	public void test8() throws Exception {
 		assertEquals(list(2, 2, 2), PrimeFactor.getPrimeFactors(8));
 	}
+	
+	@Test
+	public void test9() throws Exception {
+		assertEquals(list(3, 3), PrimeFactor.getPrimeFactors(9));
+	}
 
 }
